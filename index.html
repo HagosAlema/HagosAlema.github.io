@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hagos Alema | Android Specialist & Blockchain Developer</title>
+  <meta name="description" content="Portfolio of Hagos Alema, a Senior Android Engineer & Blockchain Developer specializing in Jetpack Compose, Kotlin, secure MPC crypto wallets, and decentralized applications (DApps).">
+  <meta name="keywords" content="Hagos Alema, Android Engineer, Kotlin, Jetpack Compose, Crypto Wallet, MPC, Secret Sharing, Blockchain Developer, Solidity, Seoul National University">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hagos Alema | Android Specialist & Blockchain Developer">
+  <meta property="og:description" content="Discover premium Android architectures, secure MPC wallets, and full-stack DApps. SNU M.Sc graduate with 6+ years of experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hagosalema.dev">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Background Glows -->
+  <div class="glow-bg glow-bg-1" aria-hidden="true"></div>
+  <div class="glow-bg glow-bg-2" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="logo" aria-label="Hagos Alema Home">
+        <span class="logo-accent">&lt;</span>Hagos<span class="logo-last"> Alema</span><span class="logo-accent">/&gt;</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#open-source" class="nav-link">Open Source</a></li>
+          <li><a href="#playroom" class="nav-link">Playroom</a></li>
+          <li><a href="#timeline" class="nav-link">Timeline</a></li>
+          <li><a href="#references" class="nav-link">References</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
+    <nav aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#open-source" class="mobile-nav-link">Open Source</a></li>
+        <li><a href="#playroom" class="mobile-nav-link">Playroom</a></li>
+        <li><a href="#timeline" class="mobile-nav-link">Timeline</a></li>
+        <li><a href="#references" class="mobile-nav-link">References</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-grid">
+        <div class="hero-content">
+          <div class="badge-android">
+            <svg class="badge-android-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zM12 2.25c-2.45 0-4.52 1.48-5.4 3.57h10.8c-.88-2.09-2.95-3.57-5.4-3.57zm3.17-.67l.95-.95a.495.495 0 0 0 0-.7.495.495 0 0 0-.7 0l-1.07 1.07C13.56 1.37 12.8 1.25 12 1.25s-1.56.12-2.35.35L8.58.53a.495.495 0 0 0-.7 0 .495.495 0 0 0 0 .7l.95.95C6.73 3.32 5.5 5.51 5.5 8h13c0-2.49-1.23-4.68-3.33-5.75zM9.5 6a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zm5 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/>
+            </svg>
+            <span>Senior Native Android Engineer · Blockchain &amp; Web3 Integration · Open Source Contributor</span>
+          </div>
+          <h1 class="hero-title">
+            Crafting Resilient &amp; Scalable <br>
+            <span class="gradient-text">Android Architectures</span>
+          </h1>
+          <p class="hero-description">
+            Hi, I'm Hagos Alema. I specialize in building enterprise-grade, offline-first native Android applications and publishing open-source Jetpack Compose libraries (<a href="#open-source" style="color: var(--accent-purple); text-decoration: underline;">compose-grid</a>, <a href="#open-source" style="color: var(--accent-purple); text-decoration: underline;">LazyCanvas</a>). Alongside core Android systems engineering (Kotlin, Clean Architecture, NDK), I bring specialized capability in blockchain integrations—including threshold cryptography, smart contracts, and decentralized mobile protocols. M.Sc. Graduate from Seoul National University.
+          </p>
+          
+          <!-- Spoken Languages Mini-Badges -->
+          <div class="languages-bar">
+            <span class="lang-tag">🇪🇹 Amharic (Native)</span>
+            <span class="lang-tag">🇪🇹 Tigrigna (Native)</span>
+            <span class="lang-tag">🇬🇧 English (Fluent)</span>
+            <span class="lang-tag">🇰🇷 Korean (Conversational)</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Work
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-mock-code" style="max-width: 480px;">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="file-name">SecretSharing.cpp</span>
+            </div>
+            <pre class="code-body"><code><span class="k">extern</span> <span class="n">"C"</span>
+<span class="t">JNIEXPORT</span> <span class="t">jobjectArray</span> <span class="t">JNICALL</span>
+<span class="nc">Java_com_wallet_MpcCore_splitSecret</span><span class="p">(</span>
+    <span class="t">JNIEnv</span>* <span class="py">env</span>, <span class="t">jobject</span> <span class="py">thiz</span>,
+    <span class="t">jbyteArray</span> <span class="py">secret</span>, <span class="t">jint</span> <span class="py">n</span>, <span class="t">jint</span> <span class="py">t</span>
+<span class="p">) {</span>
+    <span class="k">auto</span> <span class="py">shares</span> = <span class="t">MpcCrypto::generateShares</span><span class="p">(</span><span class="py">secret</span>, <span class="py">n</span>, <span class="py">t</span><span class="p">);</span>
+    <span class="k">return</span> <span class="t">MpcJni::convertToJniArray</span><span class="p">(</span><span class="py">env</span>, <span class="py">shares</span><span class="p">);</span>
+<span class="p">}</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <h2 class="section-subtitle">Core Capabilities</h2>
+        <h3 class="section-title">Technical Expertise</h3>
+        <p class="section-desc">A deep, battle-tested set of languages, frameworks, and tools mapped out from my corporate, blockchain, and academic research history.</p>
+        
+        <div class="skills-grid grid-4-cols">
+          <!-- Card 1: Android Core -->
+          <div class="skills-card card-glow-android">
+            <div class="skills-card-icon android-color">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                <path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zM12 2.25c-2.45 0-4.52 1.48-5.4 3.57h10.8c-.88-2.09-2.95-3.57-5.4-3.57zm3.17-.67l.95-.95a.495.495 0 0 0 0-.7.495.495 0 0 0-.7 0l-1.07 1.07C13.56 1.37 12.8 1.25 12 1.25s-1.56.12-2.35.35L8.58.53a.495.495 0 0 0-.7 0 .495.495 0 0 0 0 .7l.95.95C6.73 3.32 5.5 5.51 5.5 8h13c0-2.49-1.23-4.68-3.33-5.75zM9.5 6a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zm5 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/>
+              </svg>
+            </div>
+            <h4>Android Core</h4>
+            <ul class="skills-list">
+              <li>Kotlin & Java</li>
+              <li>Jetpack Compose & XML</li>
+              <li>C / C++ Native Modules (JNI)</li>
+              <li>MPC-Based Cryptography</li>
+              <li>Clean Architecture & MVVM</li>
+              <li>Room, Flow, Coroutines</li>
+              <li>Trust Wallet Core & usblib</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Blockchain & Full Stack -->
+          <div class="skills-card card-glow-backend">
+            <div class="skills-card-icon backend-color">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h4>Blockchain & Web</h4>
+            <ul class="skills-list">
+              <li>Solidity & Rust Smart Contracts</li>
+              <li>NodeJS, Express & NestJS</li>
+              <li>Next.js, VueJS & ReactJS</li>
+              <li>Web3.js, ethers.js & Hardhat</li>
+              <li>EVM & Solana Integration</li>
+              <li>PostgreSQL, MongoDB, SQLite</li>
+              <li>Nginx & Apache Web Servers</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: DevOps & Tools -->
+          <div class="skills-card card-glow-devops">
+            <div class="skills-card-icon devops-color">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <h4>DevOps & Infrastructure</h4>
+            <ul class="skills-list">
+              <li>Docker Containerization</li>
+              <li>AWS (EC2, S3, IPFS) & GCP</li>
+              <li>CI/CD (GitHub Actions)</li>
+              <li>Git (GitHub, Bitbucket)</li>
+              <li>Dokka Documentation</li>
+              <li>Jira, Confluence, Trello</li>
+              <li>Figma & Postman</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Mobile AI & Edge ML -->
+          <div class="skills-card card-glow-ai">
+            <div class="skills-card-icon ai-color">
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="15" x2="23" y2="15"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="15" x2="4" y2="15"></line>
+              </svg>
+            </div>
+            <h4>Mobile AI & Edge ML</h4>
+            <ul class="skills-list">
+              <li>Gemini Nano & AICore</li>
+              <li>Google AI Edge SDK (LiteRT)</li>
+              <li>Google ML Kit (Vision & NLP)</li>
+              <li>MediaPipe Kit & Models</li>
+              <li>On-device Vector DBs</li>
+              <li>Mobile RAG Architecture</li>
+              <li>Whisper Speech Integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <h2 class="section-subtitle">My Work</h2>
+        <h3 class="section-title">Selected Projects</h3>
+        <p class="section-desc">Practical implementations showcasing security-first architectures, low-level Native integrations, and blockchain protocols.</p>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-project-id="p1">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-android">Android</span>
+                <span class="tag tag-tech">C++ JNI</span>
+                <span class="tag tag-backend">Cryptography</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">Uniwaffle</h4>
+              <p class="project-text">Security-first crypto wallet utilizing MPC (Multi-Party Computation) and Secret Sharing algorithms. Features external USB backup and custom face authentication.</p>
+            </div>
+            <div class="project-footer">
+              <a href="projects/uniwaffle.html" class="btn btn-sm btn-outline">View Case Study &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-project-id="p2">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-backend">Solidity</span>
+                <span class="tag tag-tech">NextJS</span>
+                <span class="tag tag-lib">DApp</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">BOOM PLAY</h4>
+              <p class="project-text">A decentralized prediction platform running smart contracts on EVM and Solana (SVM) blockchains. Integrated with MetaMask, Phantom, and Privy wallets.</p>
+            </div>
+            <div class="project-footer">
+              <a href="projects/boomplay.html" class="btn btn-sm btn-outline">View Case Study &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-project-id="p3">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-android">Android / iOS</span>
+                <span class="tag tag-lib">UGC Platform</span>
+                <span class="tag tag-tech">Java / MVVM</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">Buzzi</h4>
+              <p class="project-text">Reward-based UGC to commerce mobile application. Allows creators to share video/image reviews and claim reward points redeemable for giftcards.</p>
+            </div>
+            <div class="project-footer">
+              <a href="projects/buzzi.html" class="btn btn-sm btn-outline">View Case Study &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-project-id="p4">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-lib">NFT Platform</span>
+                <span class="tag tag-backend">Solidity</span>
+                <span class="tag tag-tech">React / IPFS</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">Unilapse</h4>
+              <p class="project-text">End-to-end NFT marketplace and digital asset minting platform featuring EIP-2981 royalties, lazy minting, and decentralized IPFS asset storage.</p>
+            </div>
+            <div class="project-footer">
+              <a href="projects/unilapse.html" class="btn btn-sm btn-outline">View Case Study &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-project-id="p5">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-android">rPPG Signal Engine</span>
+                <span class="tag tag-tech">Kotlin / DSP</span>
+                <span class="tag tag-lib">CameraX / Health</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">PulseCheck</h4>
+              <p class="project-text">Zero-network, privacy-first Android app measuring Heart-Rate Variability (HRV / RMSSD) via phone camera rPPG, zero-phase bandpass filtering, and parabolic sub-sample peak interpolation.</p>
+            </div>
+            <div class="project-footer">
+              <a href="projects/pulsecheck.html" class="btn btn-sm btn-outline">View Case Study &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source & GitHub Showcase -->
+    <section id="open-source" class="opensource-section">
+      <div class="section-container">
+        <h2 class="section-subtitle">Community & Open Source</h2>
+        <h3 class="section-title">GitHub Highlights & Libraries</h3>
+        <p class="section-desc">Public Android and Jetpack Compose libraries created and published by Hagos Alema on GitHub and Maven Central.</p>
+
+        <!-- GitHub Stats Banner -->
+        <div class="github-stats-banner">
+          <div class="github-stat-item">
+            <span class="stat-number">14+</span>
+            <span class="stat-label">Public Repositories</span>
+          </div>
+          <div class="github-stat-item">
+            <span class="stat-number">Sonatype</span>
+            <span class="stat-label">Maven Central Publisher</span>
+          </div>
+          <div class="github-stat-item">
+            <span class="stat-number">Jetpack</span>
+            <span class="stat-label">Compose Virt Specialists</span>
+          </div>
+          <div class="github-stat-item">
+            <a href="https://github.com/HagosAlema" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              Follow @HagosAlema
+            </a>
+          </div>
+        </div>
+
+        <!-- Open Source Repos Grid -->
+        <div class="projects-grid grid-2-cols" style="margin-top: 2rem;">
+          <!-- Repo 1: compose-grid -->
+          <article class="project-card opensource-card">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-android">Kotlin</span>
+                <span class="tag tag-tech">Jetpack Compose</span>
+                <span class="tag tag-lib">Maven Central</span>
+              </div>
+              <span class="maven-badge">io.github.hagosalema:grid-core</span>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">
+                <a href="https://github.com/HagosAlema/compose-grid" target="_blank" rel="noopener">compose-grid ↗</a>
+              </h4>
+              <p class="project-text">
+                A high-performance data table for Jetpack Compose featuring 2D row and column virtualization, frozen/resizable columns, multi-column sorting, row selection, Paging 3 integration, and Material 3 design tokens.
+              </p>
+            </div>
+            <div class="project-footer" style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="repo-meta">Published on Sonatype Central</span>
+              <a href="https://github.com/HagosAlema/compose-grid" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                GitHub Repo &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Repo 2: LazyCanvas -->
+          <article class="project-card opensource-card">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-android">Kotlin</span>
+                <span class="tag tag-tech">Jetpack Compose</span>
+                <span class="tag tag-backend">2D Canvas Engine</span>
+              </div>
+              <span class="maven-badge">io.github.hagosalema:lazycanvas</span>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">
+                <a href="https://github.com/HagosAlema/LazyCanvas" target="_blank" rel="noopener">LazyCanvas ↗</a>
+              </h4>
+              <p class="project-text">
+                A virtualized, infinitely pannable and zoomable 2D rendering canvas engine optimized for Jetpack Compose UI. Handles viewport culling and smooth gesture transformations.
+              </p>
+            </div>
+            <div class="project-footer" style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="repo-meta">Infinite Pan & Zoom Virtualization</span>
+              <a href="https://github.com/HagosAlema/LazyCanvas" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                GitHub Repo &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Repo 3: habesha-names-android -->
+          <article class="project-card opensource-card">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-android">Kotlin</span>
+                <span class="tag tag-tech">Android SDK</span>
+                <span class="tag tag-lib">NLP / Transliteration</span>
+              </div>
+              <span class="maven-badge">io.github.hagosalema:names-core</span>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">
+                <a href="https://github.com/HagosAlema/habesha-names-android" target="_blank" rel="noopener">habesha-names-android ↗</a>
+              </h4>
+              <p class="project-text">
+                Ethiopian/Eritrean name intelligence library for Kotlin and Android. Features Fidel script parsing, transliteration mapping, spelling variant generation, and patronymic-aware fuzzy matching.
+              </p>
+            </div>
+            <div class="project-footer" style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="repo-meta">Fidel Transliteration & Fuzzy Match</span>
+              <a href="https://github.com/HagosAlema/habesha-names-android" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                GitHub Repo &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Repo 4: modular-navigation -->
+          <article class="project-card opensource-card">
+            <div class="project-header">
+              <div class="project-tags">
+                <span class="tag tag-android">Kotlin</span>
+                <span class="tag tag-tech">Clean Architecture</span>
+                <span class="tag tag-backend">Multi-Module</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h4 class="project-title">
+                <a href="https://github.com/HagosAlema/modular-navigation" target="_blank" rel="noopener">modular-navigation ↗</a>
+              </h4>
+              <p class="project-text">
+                Decoupled navigation pattern for multi-module Android architectures. Eliminates direct feature module dependencies during screen routing and deep linking.
+              </p>
+            </div>
+            <div class="project-footer" style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="repo-meta">Multi-Module Android Router</span>
+              <a href="https://github.com/HagosAlema/modular-navigation" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                GitHub Repo &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playroom (Interactive Android Device Simulator) -->
+    <section id="playroom" class="playroom-section">
+      <div class="section-container playroom-grid">
+        <div class="playroom-header-text">
+          <h2 class="section-subtitle">Interactive Sandbox</h2>
+          <h3 class="section-title">The Android Playroom</h3>
+          <p class="section-desc">
+            Interact with a virtual Android device loaded with simulations of my actual engineering projects. Wake it up, launch apps, and see Compose code run in real-time.
+          </p>
+          <div class="instructions-card">
+            <h5>How to Interact:</h5>
+            <ol>
+              <li>Click or tap on the virtual phone screen to wake it up.</li>
+              <li>Tap app icons (like the Chat, GitHub, or Compose Sandbox apps) to open them.</li>
+              <li>Use the Android navigation buttons at the bottom (Back, Home) to exit apps.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="playroom-simulator">
+          <!-- Simulated Smartphone Container -->
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            
+            <div class="phone-screen" id="phone-screen">
+              <!-- Android Status Bar -->
+              <div class="phone-status-bar">
+                <span class="status-time" id="status-time">12:00</span>
+                <div class="status-icons">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.04 19.58 10.48 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                  </svg>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <rect x="2" y="7" width="16" height="10" rx="2" ry="2"></rect>
+                    <line x1="22" y1="11" x2="22" y2="13"></line>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Main Screen Content Window -->
+              <div class="phone-window-container" id="phone-window">
+                
+                <!-- Home Screen (Active by default) -->
+                <div class="phone-home-screen active" id="phone-home">
+                  <div class="phone-hero">
+                    <p class="phone-greeting">Hello, Recruiter</p>
+                    <p class="phone-date" id="phone-date">Sunday, July 19</p>
+                  </div>
+                  
+                  <div class="app-drawer-grid">
+                    <!-- Bio App -->
+                    <button class="app-icon-wrapper" data-app="bio" aria-label="Open Bio App">
+                      <div class="app-icon app-icon-bio">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                      </div>
+                      <span class="app-label">Bio</span>
+                    </button>
+
+                    <!-- Compose Sandbox -->
+                    <button class="app-icon-wrapper" data-app="compose" aria-label="Open Compose Sandbox App">
+                      <div class="app-icon app-icon-compose">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                          <path d="M12 2L2 22h20L12 2zm0 4.5l6.5 12.5h-13L12 6.5z"/>
+                        </svg>
+                      </div>
+                      <span class="app-label">Compose</span>
+                    </button>
+
+                    <!-- Github Simulator -->
+                    <button class="app-icon-wrapper" data-app="github" aria-label="Open GitHub Commit App">
+                      <div class="app-icon app-icon-github">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.197 22 16.44 22 12.017 22 6.484 17.522 2 12 2z"/>
+                        </svg>
+                      </div>
+                      <span class="app-label">GitHub</span>
+                    </button>
+
+                    <!-- Recruiter Chat -->
+                    <button class="app-icon-wrapper" data-app="chat" aria-label="Open Recruiter Chat App">
+                      <div class="app-icon app-icon-chat">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                      </div>
+                      <span class="app-label">Chat Bot</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Bio App Window -->
+                <div class="phone-app-window" id="app-bio">
+                  <div class="app-header">
+                    <span>Developer Profile</span>
+                  </div>
+                  <div class="app-body scrollable">
+                    <div class="app-profile-header">
+                      <div class="app-avatar-placeholder">HA</div>
+                      <h5>Hagos Alema</h5>
+                      <p>M.Sc. Computer Science (SNU)</p>
+                    </div>
+                    <div class="app-profile-info">
+                      <h6>About Hagos</h6>
+                      <p>I am an Android developer with 6+ years of experience delivering security-first blockchain applications and high-quality mobile products.</p>
+                      <h6>Focus Areas</h6>
+                      <ul>
+                        <li>On-Device AI & Edge ML (Gemini, LiteRT)</li>
+                        <li>Jetpack Compose UI/UX</li>
+                        <li>Clean Architecture & Multi-module</li>
+                        <li>Native JNI Development (C/C++)</li>
+                        <li>Smart Contract Engineering</li>
+                      </ul>
+                      <h6>Expertise</h6>
+                      <p>MPC cryptography, hardware integration (USB cold backup), reactive programming (Kotlin Flow, RxJava), and on-device ML (ML Kit, MediaPipe).</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Compose Sandbox Window -->
+                <div class="phone-app-window" id="app-compose">
+                  <div class="app-header">
+                    <span>Compose Playground</span>
+                  </div>
+                  <div class="app-body">
+                    <div class="compose-sandbox-container">
+                      <p class="sandbox-instruction">Select a Compose layout template below to render it on the screen.</p>
+                      
+                      <div class="compose-options">
+                        <button class="compose-option-btn active" data-template="button">Greeting Button</button>
+                        <button class="compose-option-btn" data-template="profile">Profile Card</button>
+                        <button class="compose-option-btn" data-template="counter">Interactive Counter</button>
+                      </div>
+
+                      <div class="sandbox-scroll-area">
+                        <div class="code-editor-preview">
+                          <h6>Kotlin / Compose Code:</h6>
+                          <pre><code id="compose-code">@Composable
+fun Greeting() {
+    Button(onClick = { }) {
+        Text("Hello Android!")
+    }
+}</code></pre>
+                        </div>
+
+                        <div class="compose-output-preview">
+                          <h6>Simulated Screen Output:</h6>
+                          <div class="compose-render-target" id="compose-render">
+                            <button class="simulated-android-btn">Hello Android!</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- GitHub Feed Simulator Window -->
+                <div class="phone-app-window" id="app-github">
+                  <div class="app-header">
+                    <span>github.com/hagosalema</span>
+                  </div>
+                  <div class="app-body scrollable">
+                    <div class="github-header">
+                      <span>Recent Commits</span>
+                    </div>
+                    <ul class="github-commits-list" id="commits-list">
+                      <!-- Dynamically filled by phone.js -->
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Recruiter Chat App Window -->
+                <div class="phone-app-window" id="app-chat">
+                  <div class="app-header">
+                    <span>Chat with Hagos</span>
+                  </div>
+                  <div class="app-body chat-flex">
+                    <div class="chat-messages-container" id="chat-messages">
+                      <div class="chat-message bot">
+                        <div class="msg-bubble">Hi! Ask me anything about Hagos' projects, thesis research, or background.</div>
+                      </div>
+                    </div>
+                    <div class="chat-input-area">
+                      <div class="chat-options-grid">
+                        <button class="chat-query-btn" data-query="stack">What is your tech stack?</button>
+                        <button class="chat-query-btn" data-query="availability">Are you looking for opportunities?</button>
+                        <button class="chat-query-btn" data-query="projects">Tell me about your best app</button>
+                        <button class="chat-query-btn" data-query="opensource">What open source projects do you maintain?</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- End Screen Content Window -->
+
+              <!-- Android Navigation Bar -->
+              <div class="phone-nav-bar">
+                <button class="nav-btn-back" id="phone-back" aria-label="Back">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <polygon points="15 19 8 12 15 5 15 19"/>
+                  </svg>
+                </button>
+                <button class="nav-btn-home" id="phone-home-btn" aria-label="Home">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <circle cx="12" cy="12" r="7"/>
+                  </svg>
+                </button>
+              </div>
+
+            </div> <!-- End Screen -->
+          </div> <!-- End Phone Frame -->
+        </div> <!-- End Playroom Simulator -->
+      </div>
+    </section>
+
+    <!-- Experience / Timeline -->
+    <section id="timeline" class="timeline-section">
+      <div class="section-container">
+        <h2 class="section-subtitle">Professional Path</h2>
+        <h3 class="section-title">Experience & Education</h3>
+        
+        <div class="timeline-container">
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021.11 - Present</div>
+            <div class="timeline-content">
+              <h4>Android Engineer - Crypto Wallet</h4>
+              <h5 class="timeline-company">Hanyang University - LTCWare, Seoul, South Korea</h5>
+              <p>Specializing in Jetpack Compose, modular architecture, and secure MPC-based secret sharing. Built C++ native modules splitting mnemonics into multiple shares. Integrated Trust Wallet Core for multi-chain signing (EVM and Solana). Implemented low-level external USB storage read/write in C for cold storage. Managed Room DB caching and schema migrations.</p>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023.05 - 2025.09</div>
+            <div class="timeline-content">
+              <h4>Blockchain Developer (Part-time)</h4>
+              <h5 class="timeline-company">Unilapse, Seoul, South Korea</h5>
+              <p>Developed and deployed Solidity smart contracts on EVM chains. Built Web3 platforms (NFT marketplaces, prediction markets) integrating MetaMask, Phantom, and Privy wallets. Configured nodes via Chainstack, Infura, and Alchemy.</p>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021.11 - 2023.04</div>
+            <div class="timeline-content">
+              <h4>Development Consultant (Part-time)</h4>
+              <h5 class="timeline-company">Merchsquare, Seoul, South Korea</h5>
+              <p>Consulted mobile teams on application architectures, database optimizations, and configurations for backend cloud servers.</p>
+            </div>
+          </div>
+
+          <!-- Experience 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019.02 - 2021.10</div>
+            <div class="timeline-content">
+              <h4>Developer Team Lead</h4>
+              <h5 class="timeline-company">Merchsquare, Seoul, South Korea</h5>
+              <p>Led development teams, structured MVVM Android apps in Java/Kotlin. Developed PHP/Node.js REST APIs and deployed dashboard systems on AWS EC2.</p>
+            </div>
+          </div>
+
+          <!-- Experience 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018.09 - 2019.01</div>
+            <div class="timeline-content">
+              <h4>Backend Developer</h4>
+              <h5 class="timeline-company">Rhythmn, Seoul, South Korea</h5>
+              <p>Designed scalable RESTful APIs using Node.js/Express. Managed MariaDB and MongoDB databases, writing comprehensive unit tests with Jest.</p>
+            </div>
+          </div>
+
+          <!-- Education 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="border-color: var(--accent-teal);"></div>
+            <div class="timeline-date">2016.09 - 2018.08</div>
+            <div class="timeline-content">
+              <h4>M.Sc. in Computer Science & Engineering</h4>
+              <h5 class="timeline-company">Seoul National University, South Korea</h5>
+              <p>Specialized in computational theory, complexity analysis, and algorithms.</p>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="border-color: var(--accent-teal);"></div>
+            <div class="timeline-date">2015.09 - 2016.08</div>
+            <div class="timeline-content">
+              <h4>Korean Language and Culture Certification</h4>
+              <h5 class="timeline-company">Chungnam National University, South Korea</h5>
+              <p>Intensive immersion course program focusing on conversational and academic Korean fluency.</p>
+            </div>
+          </div>
+
+          <!-- Education 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="border-color: var(--accent-teal);"></div>
+            <div class="timeline-date">2009.09 - 2014.08</div>
+            <div class="timeline-content">
+              <h4>B.Sc. in Computer Science & Engineering</h4>
+              <h5 class="timeline-company">Mekelle University, Ethiopia</h5>
+              <p>Graduated with high honors. Specialized in core software design principles, compiler construction, and database architectures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="references-section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+      <div class="section-container">
+        <h2 class="section-subtitle">Vouched By Experts</h2>
+        <h3 class="section-title">References</h3>
+        <p class="section-desc">Academic and corporate leaders who have supervised my contributions across mobile, blockchain, and research labs.</p>
+        
+        <div class="skills-grid grid-3-cols">
+          <!-- Ref 1 -->
+          <div class="skills-card" style="padding: 2rem; border-radius: var(--radius-md);">
+            <h5 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.2rem;">Prof. MinSu Yu (유민수)</h5>
+            <p style="font-size: 0.85rem; color: var(--accent-purple); font-weight: 500; margin-bottom: 0.8rem;">CEO at LTCware Inc. / Hanyang University Prof.</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.2rem;">Supervised my work on Uniwaffle MPC crypto wallet core and native C++ integrations.</p>
+            <div class="ref-contact" style="font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.3rem;">
+              <span><strong>Phone:</strong> +82-2-2220-1737</span>
+              <span><strong>Email:</strong> msryu@hanyang.ac.kr</span>
+            </div>
+          </div>
+
+          <!-- Ref 2 -->
+          <div class="skills-card" style="padding: 2rem; border-radius: var(--radius-md);">
+            <h5 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.2rem;">Sangwoo Song (송상우)</h5>
+            <p style="font-size: 0.85rem; color: var(--accent-purple); font-weight: 500; margin-bottom: 0.8rem;">CEO at Merchsquare Inc.</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.2rem;">Supervised my team-leading contributions for the Buzzi UGC mobile platform.</p>
+            <div class="ref-contact" style="font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.3rem;">
+              <span><strong>Phone:</strong> +82-10-2792-1469</span>
+              <span><strong>Email:</strong> swsong@merchsquare.com</span>
+            </div>
+          </div>
+
+          <!-- Ref 3 -->
+          <div class="skills-card" style="padding: 2rem; border-radius: var(--radius-md);">
+            <h5 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.2rem;">Dr. WonBae Park (박원배)</h5>
+            <p style="font-size: 0.85rem; color: var(--accent-purple); font-weight: 500; margin-bottom: 0.8rem;">CEO at Unilapse</p>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.2rem;">Supervised my smart contract deployments and node optimization for BOOM PLAY DApp.</p>
+            <div class="ref-contact" style="font-size: 0.8rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.3rem;">
+              <span><strong>Phone:</strong> +82-10-9365-0330</span>
+              <span><strong>Email:</strong> dev@boomplay.io</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container contact-grid">
+        <div class="contact-info-panel">
+          <h2 class="section-subtitle">Let's Connect</h2>
+          <h3 class="section-title">Start a Conversation</h3>
+          <p class="section-desc">If you have technical inquiries regarding MPC wallets, DApp smart contracts, or consulting opportunities, reach out directly.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>hagosalema.mit@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+              <span>+82-10-6235-5118</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Gangnam-gu, Seoul, South Korea</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/hagosalema" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.197 22 16.44 22 12.017 22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" required placeholder="John Doe">
+              <span class="error-msg" aria-live="polite">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" required placeholder="john@example.com">
+              <span class="error-msg" aria-live="polite">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="5" required placeholder="Hi Hagos, I'd like to collaborate..."></textarea>
+              <span class="error-msg" aria-live="polite">Please enter your message.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+          
+          <div id="contact-toast" class="toast-notification" role="alert" aria-hidden="true">
+            <span id="toast-message">Message sent successfully!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-container footer-content">
+      <p class="copyright">&copy; 2026 Hagos Alema. Built with native Web Components & CSS Grid.</p>
+      <a href="#hero" class="btn-scroll-top" aria-label="Scroll back to top">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/phone.js"></script>
+</body>
+</html>

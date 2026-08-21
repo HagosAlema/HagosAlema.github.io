@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseCheck — Camera Pulse & HRV Signal Engine | Hagos Alema Portfolio</title>
+  <meta name="description" content="Technical case study of PulseCheck: Zero-network, privacy-first Android app measuring Heart-Rate Variability (HRV) using phone camera rPPG, zero-phase signal filtering, and Clean Architecture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../js/app.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="logo" aria-label="Hagos Alema Home">
+        <span class="logo-accent">&lt;</span>Hagos<span class="logo-last"> Alema</span><span class="logo-accent">/&gt;</span>
+      </a>
+      <a href="../index.html#projects" class="back-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Projects
+      </a>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Detail Hero -->
+    <section class="project-detail-hero">
+      <div class="section-container">
+        <div class="project-badge-row">
+          <span class="badge-android">Android Native</span>
+          <span class="tech-badge">Photoplethysmography (rPPG)</span>
+          <span class="tech-badge">DSP / HRV Engine</span>
+          <span class="tech-badge">Zero-Network Privacy</span>
+        </div>
+        <h1 class="project-detail-title">PulseCheck — Camera Pulse & HRV Engine</h1>
+        <p class="project-detail-subtitle">
+          A zero-network, privacy-first Android wellbeing app that measures Heart-Rate Variability (HRV / RMSSD) and nervous system state using nothing but the smartphone's camera. Engineered with pure-Kotlin digital signal processing, zero-phase bandpass filtering, parabolic sub-sample peak interpolation, and Clean Architecture.
+        </p>
+
+        <!-- Project Metadata Grid -->
+        <div class="project-meta-grid">
+          <div class="meta-card">
+            <div class="meta-label">My Role</div>
+            <div class="meta-value">Creator & Architect</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Privacy Guarantee</div>
+            <div class="meta-value">0 INTERNET Permission</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Architecture</div>
+            <div class="meta-value">Clean Ring Architecture</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Core Technologies</div>
+            <div class="meta-value">Kotlin, Compose, CameraX, Room</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep-Dive Details Section -->
+    <section class="project-section-block">
+      <div class="section-container">
+        <h2 class="section-title">Technical Architecture & Signal Pipeline</h2>
+        <p class="section-desc">
+          PulseCheck converts subtle fingertip tissue brightness variations under camera torch illumination into precision cardiac inter-beat interval streams entirely on-device.
+        </p>
+
+        <div class="tech-highlight-grid">
+          <div class="tech-highlight-card">
+            <h3>Camera rPPG & Uniform Resampling</h3>
+            <p>
+              Captures raw green-channel frame brightness via CameraX. Because frame delivery rates jitter, signal frames are resampled onto a strict uniform temporal grid before digital filtering to eliminate phase distortion.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">CameraX</span>
+              <span class="tech-badge">Uniform Resampling</span>
+              <span class="tech-badge">Kotlin</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>Zero-Phase Bandpass Filtering</h3>
+            <p>
+              Filters raw brightness signals forward and backward to cancel phase delay shifts, preserving the exact timing of systolic peaks required for accurate RMSSD calculation.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">Filtfilt</span>
+              <span class="tech-badge">DSP</span>
+              <span class="tech-badge">Pure Kotlin</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>Parabolic Sub-Sample Peak Interpolation</h3>
+            <p>
+              Fits quadratic parabola curves over discrete 30 fps sample points, achieving sub-millisecond inter-beat interval precision (&lt;0.02 ms error compared to 60 fps capture).
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">Sub-sample Precision</span>
+              <span class="tech-badge">Quadratic Fit</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>Spectral Purity & Artifact Rejection</h3>
+            <p>
+              Validates signal confidence by evaluating spectral power density alongside local median artifact rejection, refusing to output misleading numbers under motion noise.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">Spectral Density</span>
+              <span class="tech-badge">Artifact Rejection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- System Architecture Blueprint -->
+        <div style="margin-top: 3rem;">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Clean Ring Architecture</h3>
+          <div class="architecture-box">
+<pre class="code-body">
+         :app            Jetpack Compose UI, ViewModels, Navigation, DI
+           │
+           ▼
+       :core:data        Room Database · DataStore · Health Connect · CameraX
+           │
+           ▼
+      :core:domain       Entities · Repository Contracts · HRV Use Cases
+                         (Pure Kotlin · Zero Android Framework Dependencies)
+
+      :core:signal       Resampling · Filtering · Peak Detection · HRV Engine
+                         (Pure Kotlin · Zero Dependencies · Millisecond JVM Unit Tests)
+</pre>
+          </div>
+        </div>
+
+        <!-- Signal Pipeline Architecture -->
+        <div style="margin-top: 2.5rem;">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Signal Pipeline Flow</h3>
+          <div class="architecture-box">
+<pre class="code-body">
+Camera Frames  ──►  Uniform Resample  ──►  Zero-Phase Band-Pass  ──►  Sub-Sample Peak Fit  ──►  Spectral Purity  ──►  ln(RMSSD) Baseline
+</pre>
+          </div>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div style="margin-top: 3rem;">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Engineering Metrics</h3>
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-number">0</div>
+              <div class="metric-label">INTERNET Permissions</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">&lt;0.02ms</div>
+              <div class="metric-label">Sub-sample Peak Accuracy</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">100%</div>
+              <div class="metric-label">On-Device Privacy</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">57+</div>
+              <div class="metric-label">JVM Signal Unit Tests</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Hagos Alema. Built with Vanilla Web Technologies.</p>
+    </div>
+  </footer>
+</body>
+</html>

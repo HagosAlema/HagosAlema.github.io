@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOM PLAY DApp | Hagos Alema Portfolio</title>
+  <meta name="description" content="Technical case study of BOOM PLAY: Blockchain prediction market DApp powered by Solidity & Rust smart contracts across EVM and Solana networks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../js/app.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="logo" aria-label="Hagos Alema Home">
+        <span class="logo-accent">&lt;</span>Hagos<span class="logo-last"> Alema</span><span class="logo-accent">/&gt;</span>
+      </a>
+      <a href="../index.html#projects" class="back-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Projects
+      </a>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Detail Hero -->
+    <section class="project-detail-hero">
+      <div class="section-container">
+        <div class="project-badge-row">
+          <span class="badge-android" style="background-color: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">Web3 DApp Platform</span>
+          <span class="tech-badge">Solidity</span>
+          <span class="tech-badge">Rust (Solana)</span>
+          <span class="tech-badge">Next.js</span>
+          <span class="tech-badge">AWS & IPFS</span>
+        </div>
+        <h1 class="project-detail-title">BOOM PLAY Prediction Market</h1>
+        <p class="project-detail-subtitle">
+          A decentralized multi-chain prediction market platform allowing users to stake cryptocurrency on real-world outcomes. Powered by automated smart contract liquidity pools, oracle price feeds, and Web3 embedded onboarding.
+        </p>
+
+        <!-- Project Metadata Grid -->
+        <div class="project-meta-grid">
+          <div class="meta-card">
+            <div class="meta-label">My Role</div>
+            <div class="meta-value">Full Stack Blockchain Developer</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Timeline</div>
+            <div class="meta-value">2023.05 – 2025.09</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Organization</div>
+            <div class="meta-value">Unilapse</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Core Stack</div>
+            <div class="meta-value">Next.js, Solidity, Rust, AWS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep-Dive Details Section -->
+    <section class="project-section-block">
+      <div class="section-container">
+        <h2 class="section-title">Architecture & System Design</h2>
+        <p class="section-desc">
+          BOOM PLAY combines low-latency frontend user interaction with tamper-proof smart contract automated market makers (AMMs) across EVM and Solana ecosystems.
+        </p>
+
+        <div class="tech-highlight-grid">
+          <div class="tech-highlight-card">
+            <h3>Multi-Chain Smart Contracts</h3>
+            <p>
+              Authored modular EVM smart contracts in Solidity (ERC-20 staking, oracle resolution) and high-throughput Solana programs in Rust (Anchor framework).
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">Solidity</span>
+              <span class="tech-badge">Rust / Anchor</span>
+              <span class="tech-badge">Hardhat</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>Embedded Wallet Onboarding</h3>
+            <p>
+              Integrated Privy embedded authentication, Web3.js, and Ethers.js to provide social sign-in and non-custodial wallet creation for web users.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">Privy</span>
+              <span class="tech-badge">MetaMask</span>
+              <span class="tech-badge">Phantom</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>Decentralized IPFS Storage</h3>
+            <p>
+              Configured IPFS metadata pinning and AWS EC2/S3 storage clusters for decentralized market title, image, and oracle resolution data archiving.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">IPFS</span>
+              <span class="tech-badge">AWS EC2</span>
+              <span class="tech-badge">AWS S3</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>Full Stack Web Architecture</h3>
+            <p>
+              Built Next.js frontend with SSR caching, combined with Node.js/Express REST microservices, MongoDB, and MySQL databases for off-chain indexing.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code Preview Box -->
+        <div class="architecture-box">
+          <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary);">Solidity Liquidity Pool Contract Snippet</h3>
+          <div class="hero-mock-code" style="max-width: 100%;">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="file-name">PredictionMarket.sol</span>
+            </div>
+            <pre class="code-body"><code><span class="k">contract</span> <span class="nc">PredictionMarket</span> <span class="k">is</span> <span class="t">ReentrancyGuard</span> <span class="p">{</span>
+    <span class="k">function</span> <span class="py">stakeOutcome</span><span class="p">(</span><span class="t">uint256</span> <span class="py">marketId</span>, <span class="t">uint8</span> <span class="py">outcomeIndex</span><span class="p">) </span>
+        <span class="k">external</span> <span class="k">payable</span> <span class="t">nonReentrant</span> <span class="p">{</span>
+        <span class="t">Market</span> <span class="k">storage</span> <span class="py">m</span> = <span class="py">markets</span>[<span class="py">marketId</span>];
+        <span class="nc">require</span><span class="p">(</span><span class="py">block</span>.<span class="py">timestamp</span> &lt; <span class="py">m</span>.<span class="py">endTime</span>, <span class="n">"Market closed"</span><span class="p">);</span>
+        
+        <span class="py">m</span>.<span class="py">outcomePools</span>[<span class="py">outcomeIndex</span>] += <span class="py">msg</span>.<span class="py">value</span>;
+        <span class="nc">emit</span> <span class="t">OutcomeStaked</span><span class="p">(</span><span class="py">marketId</span>, <span class="py">msg</span>.<span class="py">sender</span>, <span class="py">msg</span>.<span class="py">value</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre>
+          </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="metric-number">Dual</div>
+            <div class="metric-label">Chains (EVM + Solana)</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">&lt; 1s</div>
+            <div class="metric-label">Oracle Update Sync</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">100%</div>
+            <div class="metric-label">Decentralized Payouts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-content">
+      <p class="copyright">&copy; 2026 Hagos Alema. All rights reserved.</p>
+      <a href="../index.html#projects" class="back-link">Back to Portfolio</a>
+    </div>
+  </footer>
+</body>
+</html>

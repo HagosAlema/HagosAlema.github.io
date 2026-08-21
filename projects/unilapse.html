@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unilapse NFT Platform | Hagos Alema Portfolio</title>
+  <meta name="description" content="Technical case study of Unilapse NFT Marketplace: Decentralized digital asset minting platform built with React, Node.js, Solidity, MariaDB, MongoDB, and IPFS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../js/app.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="logo" aria-label="Hagos Alema Home">
+        <span class="logo-accent">&lt;</span>Hagos<span class="logo-last"> Alema</span><span class="logo-accent">/&gt;</span>
+      </a>
+      <a href="../index.html#projects" class="back-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Projects
+      </a>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Detail Hero -->
+    <section class="project-detail-hero">
+      <div class="section-container">
+        <div class="project-badge-row">
+          <span class="badge-android" style="background-color: rgba(59, 130, 246, 0.15); color: #3B82F6;">Web3 NFT Platform</span>
+          <span class="tech-badge">React.js</span>
+          <span class="tech-badge">Solidity (ERC-721/1155)</span>
+          <span class="tech-badge">Hardhat</span>
+          <span class="tech-badge">IPFS Pinning</span>
+        </div>
+        <h1 class="project-detail-title">Unilapse NFT Marketplace</h1>
+        <p class="project-detail-subtitle">
+          An end-to-end NFT marketplace enabling digital creators to mint, auction, trade, and verify ownership of digital assets using gas-optimized smart contracts and decentralized IPFS storage.
+        </p>
+
+        <!-- Project Metadata Grid -->
+        <div class="project-meta-grid">
+          <div class="meta-card">
+            <div class="meta-label">My Role</div>
+            <div class="meta-value">Full Stack & Smart Contract Eng</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Timeline</div>
+            <div class="meta-value">2023.05 – 2025.09</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Organization</div>
+            <div class="meta-value">Unilapse</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-label">Core Tech</div>
+            <div class="meta-value">React, Solidity, Hardhat, IPFS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep-Dive Details Section -->
+    <section class="project-section-block">
+      <div class="section-container">
+        <h2 class="section-title">Technical Highlights & Architecture</h2>
+        <p class="section-desc">
+          Designed with a focus on smart contract security, minimal gas consumption, lazy minting signatures, and decentralized media storage.
+        </p>
+
+        <div class="tech-highlight-grid">
+          <div class="tech-highlight-card">
+            <h3>ERC-721 & ERC-1155 Smart Contracts</h3>
+            <p>
+              Developed gas-optimized Solidity smart contracts implementing EIP-2981 royalty standards and batch minting algorithms.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">Solidity</span>
+              <span class="tech-badge">ERC-721A</span>
+              <span class="tech-badge">OpenZeppelin</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>IPFS Decentralized Storage</h3>
+            <p>
+              Built IPFS pinning pipeline for immutably storing high-resolution media assets and cryptographic metadata JSON schemas.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">IPFS</span>
+              <span class="tech-badge">Pinata</span>
+              <span class="tech-badge">Metadata Schemas</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>React Web3 Interface</h3>
+            <p>
+              Designed responsive React web interface with Web3.js / Ethers.js integration for real-time live bidding, auction countdown timers, and wallet state management.
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">Ethers.js</span>
+              <span class="tech-badge">Web3.js</span>
+            </div>
+          </div>
+
+          <div class="tech-highlight-card">
+            <h3>Hybrid Database Architecture</h3>
+            <p>
+              Combined MongoDB (for fast off-chain NFT metadata search) and MariaDB (for structured user profiles and transaction analytics).
+            </p>
+            <div class="project-tags">
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">MariaDB</span>
+              <span class="tech-badge">Node.js API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code Preview Box -->
+        <div class="architecture-box">
+          <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary);">NFT Royalty Standard (EIP-2981)</h3>
+          <div class="hero-mock-code" style="max-width: 100%;">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="file-name">UnilapseNFT.sol</span>
+            </div>
+            <pre class="code-body"><code><span class="k">contract</span> <span class="nc">UnilapseNFT</span> <span class="k">is</span> <span class="t">ERC721Enumerable</span>, <span class="t">ERC2981</span> <span class="p">{</span>
+    <span class="k">function</span> <span class="py">mintWithRoyalty</span><span class="p">(</span>
+        <span class="t">address</span> <span class="py">to</span>, <span class="t">string</span> <span class="k">memory</span> <span class="py">tokenURI</span>,
+        <span class="t">address</span> <span class="py">receiver</span>, <span class="t">uint96</span> <span class="py">feeNumerator</span>
+    <span class="p">) </span><span class="k">external</span> <span class="k">onlyOwner</span> <span class="p">{</span>
+        <span class="t">uint256</span> <span class="py">tokenId</span> = <span class="nc">_nextTokenId</span><span class="p">();</span>
+        <span class="nc">_safeMint</span><span class="p">(</span><span class="py">to</span>, <span class="py">tokenId</span><span class="p">);</span>
+        <span class="nc">_setTokenRoyalty</span><span class="p">(</span><span class="py">tokenId</span>, <span class="py">receiver</span>, <span class="py">feeNumerator</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre>
+          </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="metric-number">40%</div>
+            <div class="metric-label">Gas Reduction (ERC721A)</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">100%</div>
+            <div class="metric-label">IPFS Media Immutability</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">EIP-2981</div>
+            <div class="metric-label">On-Chain Royalty Standard</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container footer-content">
+      <p class="copyright">&copy; 2026 Hagos Alema. All rights reserved.</p>
+      <a href="../index.html#projects" class="back-link">Back to Portfolio</a>
+    </div>
+  </footer>
+</body>
+</html>
